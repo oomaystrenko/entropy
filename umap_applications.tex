@@ -19,7 +19,51 @@
 	
 	При создании пространства меньшей размерности, t-SNE и UMAP используют кросс-энтропию как показатель эффективности перенесения свойств объектов. Чем меньше кросс-энтропия, тем ближе к истинному оказалось подобранное распределение.
 	
+	Приведем пример работы алгоритма UMAP. Мы возьмем набор данных об одежде, который включает в себя 70000 черно-белых изображений различной одежды по 10 классам: футболки, брюки, свитеры, платья, кроссовки и т.д. Каждая картинка имеет размер 28x28 пикселей или 784 пикселя всего (то есть изначально у нас имеется 784-мерное пространство). UMAP перевел его в 2-мерное и визуализировал результат (см. ниже).
 	
-	
+	\begin{listing}[1]{1}
+import numpy as np
+from mnist import MNIST
+import matplotlib.pyplot as plt
+%matplotlib inline
+		
+mndata = MNIST('fashionmnist')
+train, train_labels = mndata.load_training()
+test, test_labels = mndata.load_testing()
+data = np.array(np.vstack([train, test]), dtype=np.float64) / 255.0
+target = np.hstack([train_labels, test_labels])
+classes = [
+	'T-shirt/top',
+	'Trouser',
+	'Pullover',
+	'Dress',
+	'Coat',
+	'Sandal',
+	'Shirt',
+	'Sneaker',
+	'Bag',
+	'Ankle boot']
+			
+import umap
+
+embedding = umap.UMAP(n_neighbors=10).fit_transform(data)
+		
+fig, ax = plt.subplots(1, figsize=(14, 10))
+plt.scatter(*embedding.T, s=0.5, c=target, cmap='Spectral', alpha=1.0)
+cbar = plt.colorbar(boundaries=np.arange(11)-0.5)
+plt.setp(ax, xticks=[], yticks=[])
+cbar.set_ticks(np.arange(10))
+cbar.set_ticklabels(classes)
+plt.title('Fashion MNIST Embedded via UMAP')
+	\end{listing}
+
+Вот что вышло:
+\begin{figure}[bh]
+	\noindent\centering{
+		\includegraphics[height=70mm, width=110mm]{umap.png}
+	}
+	\caption{Алгоритм UMAP}
+	\label{figCurves}
+\end{figure}
 	
 \end{itemize}
