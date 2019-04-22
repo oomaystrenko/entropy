@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1555954583 "/Users/yana/Documents/GitHub/entropy/Entropia_1.tex" "/Users/yana/Documents/GitHub/entropy/Entropia_1.pdf" "Entropia_1" 1555954598
+["pdflatex"] 1555954583 "/Users/yana/Documents/GitHub/entropy/Entropia_1.tex" "/Users/yana/Documents/GitHub/entropy/Entropia_1.pdf" "Entropia_1" 1555954680
   "/Users/yana/Documents/GitHub/entropy/Entropia_1.aux" 1555954585 870 435e094f34256c247b52c188aa5b561d ""
-  "/Users/yana/Documents/GitHub/entropy/Entropia_1.tex" 1555954598 4839 9a6e59b1e6c8a81b1030ecd2d770f7a4 ""
+  "/Users/yana/Documents/GitHub/entropy/Entropia_1.tex" 1555954680 4839 9a6e59b1e6c8a81b1030ecd2d770f7a4 ""
   "/Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/labl1440.tfm" 1554392399 3536 9f595a0bbe7f2c72db5cea30b9b2eaef ""
   "/Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1551713703 3308 eee81981029f67083258db36df06e523 ""
   "/Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lacc1440.tfm" 1551713720 3168 52acd69369650fc3677a77795df7d5f5 ""
@@ -272,13 +272,13 @@
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "Entropia_1.aux" 1555954585 870 435e094f34256c247b52c188aa5b561d ""
   "Entropia_1.out" 1555954584 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Entropia_1.tex" 1555954598 4839 9a6e59b1e6c8a81b1030ecd2d770f7a4 ""
+  "Entropia_1.tex" 1555954680 4839 9a6e59b1e6c8a81b1030ecd2d770f7a4 ""
   "theory_yana.tex" 1555954569 8641 60be04dc0993f8fdfb17d6be2929601c ""
   "umap_applications.tex" 1555947938 3718 72d684bf9fd37e102a110e4f0f2c9655 ""
   (generated)
-  "/Users/yana/Documents/GitHub/entropy/Entropia_1.pdf"
   "Entropia_1.pdf"
-  "Entropia_1.aux"
-  "Entropia_1.out"
   "/Users/yana/Documents/GitHub/entropy/Entropia_1.log"
+  "Entropia_1.out"
+  "/Users/yana/Documents/GitHub/entropy/Entropia_1.pdf"
   "Entropia_1.log"
+  "Entropia_1.aux"
