@@ -357,14 +357,14 @@ OUTPUT /Users/yana/Documents/GitHub/entropy/Entropia_1.out
 INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm
 INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/laxc1200.tfm
 INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/laxc2074.tfm
-INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
-INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lacc1440.tfm
-INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/laxc1440.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/larm2074.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lacc2074.tfm
 INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lasl1200.tfm
 INPUT /Users/yana/Documents/GitHub/entropy/theory_yana.tex
 INPUT /Users/yana/Documents/GitHub/entropy/theory_yana.tex
-INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lasl1440.tfm
-INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/labl1440.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/larm1728.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lasl1728.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/labl1728.tfm
 INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lati1200.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/cmap/ot1.cmap
@@ -422,6 +422,9 @@ INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/larm0700.tf
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/latt1000.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/larm1440.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/lasl1440.tfm
+INPUT /Users/yana/Library/texlive/2018/texmf-var/fonts/tfm/lh/lh-t2a/labl1440.tfm
 INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/yana/Documents/GitHub/entropy/history.tex
 INPUT /Users/yana/Documents/GitHub/entropy/history.tex
@@ -440,6 +443,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbl1440.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbl1728.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb

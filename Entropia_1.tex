@@ -53,17 +53,22 @@
     %ЦВЕТА
     \newcommand{\blue}[1]{\textcolor[rgb]{.4,.2,.4}{#1}}
     \newcommand{\ot}[1]{\textcolor[rgb]{.55,.45,.55}{#1}}
-    \newcommand{\oq}[1]{\textcolor[rgb]{.8,.75,.8}{#1}}
+    \newcommand{\auth}[1]{\textcolor[rgb]{.8,.75,.8}{#1}}
 
     \renewcommand{\maketitle}{\noindent{\bfseries\scshape\LARGE\blue\@title}\par
-        \noindent {\large\scshape\bfseries\@subtitle}\par
-        \noindent {\slshape\mdseries\oq\@author}
+        \noindent {\LARGE\scshape\bfseries\@subtitle}\par
+        \noindent {\slshape\mdseries\auth\@author}
         \vskip 2ex}
 
     \renewcommand\section{\@startsection{section}{1}{\z@}%
         {-3.5ex \@plus -1ex \@minus -.2ex}%
         {-1em}%
-        {\normalfont\large\slshape\bfseries\ot}}
+        {\normalfont\Large\slshape\bfseries\ot}}
+
+    \renewcommand\subsection{\@startsection{subsection}{1}{\z@}%
+        {-3.5ex \@plus -1ex \@minus -.2ex}%
+        {-1em}%
+        {\normalfont\large\slshape\bfseries}}
     \makeatother
         
     \renewcommand{\labelitemi}{$\diamond$}
