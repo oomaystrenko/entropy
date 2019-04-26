@@ -1,0 +1,106 @@
+\documentclass[a4paper, 12pt]{scrreprt} 
+
+    \usepackage{cmap}
+    \usepackage{graphicx} 
+    \usepackage{wrapfig}
+    \usepackage{lastpage}
+    \usepackage{tikz}
+    \usepackage{pgfplots}
+    \usepackage{braket}
+    \usepackage{verbatim}
+    \usetikzlibrary{arrows}
+    \usetikzlibrary{calc,positioning,fit,backgrounds}
+    \usetikzlibrary{decorations.pathreplacing,calc}
+    \usepackage{amsmath} 
+    \usepackage{color}
+    \usepackage[T2A]{fontenc}
+    \usepackage[utf8]{inputenc}	
+    \usepackage[english,russian]{babel}
+    \usepackage{geometry} 
+    \geometry{top=25mm}
+    \geometry{bottom=25mm}
+    \geometry{left=16mm}
+    \geometry{right=16mm}	
+    \usepackage{amssymb}
+    \usepackage{icomma} 
+    \usepackage{mathtext} 
+    \usepackage{mathrsfs}
+    \usepackage{mathtools}
+    \usepackage{fancyhdr}
+    \usepackage{mdframed}
+    \newmdenv[
+  topline=false,
+  bottomline=false,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+  leftmargin=20pt,
+  rightmargin=20pt,
+  innertopmargin=0pt,
+  innerbottommargin=0pt
+]{siderules}
+    %\pagestyle{fancy}
+    %\fancyhf{}
+    %\renewcommand{\headrulewidth}{0,04mm}
+    \usepackage{hyperref}
+    \usepackage{mathtext} 
+    \usepackage{multicol}
+    %\rhead{\scshape{BEC 171}}
+    %\lhead{\scshape{Research seminar for research stream}}
+    %\chead{} 
+    \cfoot{\thepage} 
+    \hypersetup{
+      colorlinks=true
+       linkcolor=red,       
+            citecolor=black,   
+            filecolor=magenta,  
+            urlcolor=blue}
+    \makeatletter 
+    \renewcommand{\headrulewidth}{0,4mm} 
+    %ЦВЕТА
+    \newcommand{\blue}[1]{\textcolor[rgb]{.3,.3,.5}{#1}}
+    \newcommand{\ot}[1]{\textcolor[rgb]{.55,.55,.65}{#1}}
+    \newcommand{\oq}[1]{\textcolor[rgb]{.6,.6,.6}{#1}}
+
+    \renewcommand{\maketitle}{\noindent{\bfseries\scshape\LARGE\blue\@title}\par
+        \noindent {\large\scshape\bfseries\@subtitle}\par
+        \noindent {\slshape\mdseries\oq\@author}
+        \vskip 2ex}
+
+    \renewcommand\section{\@startsection{section}{1}{\z@}%
+        {-3.5ex \@plus -1ex \@minus -.2ex}%
+        {-1em}%
+        {\normalfont\large\slshape\bfseries\ot}}
+    \makeatother
+        
+    \renewcommand{\labelitemi}{$\diamond$}
+
+    %\author{Комитет по науке СС ФЭН}
+    \title{Энтропия}
+    %\subtitle{Выборы в Студенческий Совет -- 2018}
+
+\begin{document}
+\maketitle  
+%\pagestyle{\pagenumber{right}}
+
+\section*{Энтропия Реньи}
+
+\[H=\cfrac{1}{1-\alpha} \log \sum\limits_{i=1}^n p_i^{\alpha} \ \text{ или } \ \cfrac{1}{1-\alpha} \log \int\limits_{-\infty}^{+\infty} p_i(x)^{\alpha}dx \]
+
+\begin{itemize}
+    \item $\alpha=0 \Rightarrow H=\log n$
+    \item $\alpha\to 1 \Rightarrow H=-\sum\limits_{i=1}^n p_i\log p_i$
+    \item $\alpha=2 \Rightarrow H=-\log \sum\limits_{i=1}^n p_i^2 $
+\end{itemize}
+
+\section*{Расстояние Кульбака-Лейблера}
+
+\[D(P\, ||\, Q)=\int\limits_{-\infty}^{+\infty} p(x)\log \left(\cfrac{p(x)}{q(x)}\right)dx \]
+
+$\triangleright$ Обобщение Реньи:
+
+\[D_{\alpha}(P\, ||\, Q)=\cfrac{1}{1-\alpha} \log \int\limits_{-\infty}^{+\infty} p(\mu)^{\alpha}q(\mu)^{1-\alpha}d\mu \]
+
+\section*{Кросс-энтропия}
+
+\[CH(p, q)=H(p)+D_{KL}(p\, || \, q)=-\int\limits_{-\infty}^{+\infty}p(x)\log q(x) dx  \]
+\end{document}
