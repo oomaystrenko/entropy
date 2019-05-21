@@ -1,0 +1,4 @@
+plt.figure(figsize=(14, 10))
+sns.scatterplot(*embedding.T, hue=target, s=4, palette = 'Spectral',
+legend='full', alpha=1.0, edgecolor="none")
+plt.legend(classes, loc=1, fontsize='large')
