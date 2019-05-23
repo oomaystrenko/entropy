@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{embedding} \PYG{o}{=} \PYG{n}{umap}\PYG{o}{.}\PYG{n}{UMAP}\PYG{p}{(}\PYG{n}{n\PYGZus{}neighbors}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{o}{.}\PYG{n}{fit\PYGZus{}transform}\PYG{p}{(}\PYG{n}{data}\PYG{p}{)}
-\end{Verbatim}
