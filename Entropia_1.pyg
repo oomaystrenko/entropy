@@ -1,1 +1,0 @@
-embedding = umap.UMAP().fit_transform(data)
