@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.17)  13 JUN 2019 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.10.17)  13 JUN 2019 22:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1705,82 +1705,107 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/n' in size <44.43> not available
-(Font)              size <42.99> substituted on input line 316.
+(Font)              size <42.99> substituted on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/sc' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 316.
+(Font)              using `T2A/lmr/m/n' instead on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/sc' in size <44.43> not available
-(Font)              size <42.99> substituted on input line 316.
+(Font)              size <42.99> substituted on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/sc' in size <53.32> not available
-(Font)              size <51.59> substituted on input line 316.
+(Font)              size <51.59> substituted on input line 347.
 
-LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 316.
+LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 347.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <37.03> on input line 316.
+(Font)              <37.03> on input line 347.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <25.92088> on input line 316.
+(Font)              <25.92088> on input line 347.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.515> on input line 316.
+(Font)              <18.515> on input line 347.
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/it' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 316.
+(Font)              using `T2A/lmr/m/n' instead on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/it' in size <37.03> not available
-(Font)              size <35.83> substituted on input line 316.
+(Font)              size <35.83> substituted on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/bx/n' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 316.
+(Font)              using `T2A/lmr/m/n' instead on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/bx/n' in size <37.03> not available
-(Font)              size <35.83> substituted on input line 316.
+(Font)              size <35.83> substituted on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmss/m/n' in size <21.43> not available
-(Font)              size <20.74> substituted on input line 316.
+(Font)              size <20.74> substituted on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmss/bx/n' undefined
-(Font)              using `T2A/lmss/m/n' instead on input line 316.
+(Font)              using `T2A/lmss/m/n' instead on input line 347.
+
+<umap.png, id=13, 840.13875pt x 596.2275pt>
+File: umap.png Graphic file (type png)
+<use umap.png>
+Package pdftex.def Info: umap.png  used on input line 347.
+(pdftex.def)             Requested size: 360.82957pt x 256.0748pt.
+
+LaTeX Font Warning: Font shape `T2A/lmss/m/n' in size <30.85> not available
+(Font)              size <29.86> substituted on input line 347.
 
 
-LaTeX Font Warning: Font shape `T2A/lmss/bx/n' in size <37.03> not available
-(Font)              size <35.83> substituted on input line 316.
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 316--316
-\T2A/lmss/bx/n/35.83 laoreet scelerisque lacus. Nam quis odio enim, in
+Overfull \hbox (640.33112pt too wide) detected at line 347
+\OML/lmm/m/it/37.03 D[]\OT1/lmr/m/n/37.03 (\OML/lmm/m/it/37.03 P \OMS/lmsy/m/n/
+37.03 jj []\OT1/lmr/m/n/37.03 ) = \OMS/lmsy/m/n/37.03 ^^@\OML/lmm/m/it/37.03 p\
+OT1/lmr/m/n/37.03 (\OML/lmm/m/it/37.03 x\OT1/lmr/m/n/37.03 ) [] [](\OML/lmm/m/i
+t/37.03 x\OT1/lmr/m/n/37.03 ) \OMS/lmsy/m/n/37.03 ^^@ \OT1/lmr/m/n/37.03 (1 \OM
+S/lmsy/m/n/37.03 ^^@ \OML/lmm/m/it/37.03 p\OT1/lmr/m/n/37.03 (\OML/lmm/m/it/37.
+03 x\OT1/lmr/m/n/37.03 )) [](1 \OMS/lmsy/m/n/37.03 ^^@ []\OT1/lmr/m/n/37.03 (\O
+ML/lmm/m/it/37.03 x\OT1/lmr/m/n/37.03 )) + \OML/lmm/m/it/37.03 p\OT1/lmr/m/n/37
+.03 (\OML/lmm/m/it/37.03 x\OT1/lmr/m/n/37.03 ) [] \OML/lmm/m/it/37.03 p\OT1/lmr
+/m/n/37.03 (\OML/lmm/m/it/37.03 x\OT1/lmr/m/n/37.03 ) + (1 \OMS/lmsy/m/n/37.03 
+^^@ \OML/lmm/m/it/37.03 p\OT1/lmr/m/n/37.03 (\OML/lmm/m/it/37.03 x\OT1/lmr/m/n/
+37.03 )) [](1 \OMS/lmsy/m/n/37.03 ^^@ \OML/lmm/m/it/37.03 p\OT1/lmr/m/n/37.03 (
+\OML/lmm/m/it/37.03 x\OT1/lmr/m/n/37.03 )) =
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 316--316
-[]\T2A/lmss/bx/n/35.83 Maecenas ultricies feugiat velit non mattis. Fusce
+Overfull \hbox (32.55856pt too wide) detected at line 347
+\OML/lmm/m/it/37.03 S\OT1/lmr/m/n/37.03 (\OML/lmm/m/it/37.03 P\OMS/lmsy/m/n/37.
+03 jj[]\OT1/lmr/m/n/37.03 ) = [] \OML/lmm/m/it/37.03 p\OT1/lmr/m/n/37.03 (\OML/
+lmm/m/it/37.03 x[]\OT1/lmr/m/n/37.03 ) [] [] + (1 \OMS/lmsy/m/n/37.03 ^^@ \OML/
+lmm/m/it/37.03 p\OT1/lmr/m/n/37.03 (\OML/lmm/m/it/37.03 x[]\OT1/lmr/m/n/37.03 )
+) [] []
  []
 
 
-LaTeX Font Warning: Font shape `T2A/lmr/m/n' in size <30.85> not available
-(Font)              size <29.86> substituted on input line 316.
+Overfull \hbox (80.98996pt too wide) detected at line 347
+\OMS/lmsy/m/n/37.03 ^^@ [] [] ! []
+ []
 
 
-Overfull \hbox (4.99402pt too wide) detected at line 316
+Overfull \hbox (4.99402pt too wide) detected at line 347
 [][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][
 ][] [][][][][][][][][] [][][][][][][] 
  []
 
 
+Overfull \vbox (1084.9444pt too high) detected at line 347
+ []
+
+
 LaTeX Font Warning: Font shape `T2A/lmss/m/sc' in size <92.13> not available
-(Font)              size <51.59> substituted on input line 316.
+(Font)              size <51.59> substituted on input line 347.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/n' in size <63.98> not available
-(Font)              size <51.59> substituted on input line 316.
+(Font)              size <51.59> substituted on input line 347.
 
 
 Overfull \hbox (88.20334pt too wide) has occurred while \output is active
@@ -1789,7 +1814,7 @@ Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 
 [1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+ <./umap.png>]
 \tf@nav=\write6
 \openout6 = `poster.nav'.
 
@@ -1799,20 +1824,15 @@ Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `poster.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
- (./poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 318.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 318.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
 
+(./poster.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
+Package rerunfilecheck Info: File `poster.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-Package rerunfilecheck Warning: File `poster.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `poster.out':
-(rerunfilecheck)             Before: 3DB4954BAF5A579A506EF1B99FC90B19;76
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 40.54001pt have occurred.
@@ -1822,29 +1842,27 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 23774 strings out of 492639
- 450653 string characters out of 6133087
- 694617 words of memory out of 5000000
- 27071 multiletter control sequences out of 15000+600000
+ 23863 strings out of 492639
+ 453041 string characters out of 6133087
+ 749771 words of memory out of 5000000
+ 27159 multiletter control sequences out of 15000+600000
  38670 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,16n,71p,788b,1438s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Outline0.2} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.1} has been referenced but does not exist,
- replaced by a fixed one
-
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{c:/texli
-ve/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<c:/texlive/2018/texmf-dist
-/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm2074.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super
-/sfrm2986.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm3583.
-pfb>
-Output written on poster.pdf (1 page, 58260 bytes).
+ 60i,18n,71p,773b,1981s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2018
+/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{c:/texlive/2018/texmf-di
+st/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips
+/lm/lm-rm.enc}{c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<c:/
+texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2018/texmf
+-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
+public/lm/lmr17.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pf
+b><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb><c:/texl
+ive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm2986.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/public/cm-super/sfrm3583.pfb>
+Output written on poster.pdf (1 page, 294474 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 60 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

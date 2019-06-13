@@ -189,7 +189,38 @@
 %----------------------------------------------------------------------------------------
 
 \begin{block}{Применение}
+\textbf{Энтропийное кодирование}
 
+%\begin{figure}
+%\includegraphics[width=0.8\linewidth]{placeholder.jpg}
+%\caption{Figure caption}
+%\end{figure}
+
+Энтропия показывает наименьшее среднее число бит, необходимое для кодирования некоторой информации. С целью минимизации энтропии и оптимизации кода элементы с большой вероятностью появления кодируются меньшим числом символов. Это позволяет передавать большее количество информации, затрачивая меньший объем памяти.
+
+\textbf{Построение решающих деревьев}
+
+Каждое ветвление дерева представляет собой разделение выборки на две части по порогу некоторого признака. Расчет энтропии помогает определить оптимальный порог для каждого узла --- при котором взвешенная сумма энтропий получившихся выборок минимальна среди возможных разбиений.
+
+Например, у нас есть выборка объектов с одним признаком, длина: обыкновенный удав (22 попугая), анаконда (46 попугаев), анаконда (40 попугаев), обыкновенный удав (31 попугай).
+
+Попробуем разделить выборку по 38 попугаям:
+\begin{center}
+	\tikzstyle{level 1}=[level distance=2cm, sibling distance=7cm]
+	\tikzstyle{level 2}=[level distance=2cm, sibling distance=1cm]
+	\tikz
+	\node {Длина < 38 попугаев}
+	child { node {Да}
+		child { node {Обыкновенный удав, обыкновенный удав}}}
+	child { node {Нет}
+		child { node {Анаконда, анаконда}}};
+\end{center}
+
+При расчете энтропии $0 \cdot \log_2 0$ считается равным 0, несмотря на $\log_2 0$. За вероятность принимается вероятность встретить данный класс в новой выборке.
+
+Энтропия левой части: $-(1 \cdot \log_2 1 + 0 \cdot \log_2 0) = 0$. Энтропия правой части: $-(1 \cdot \log_2 1 + 0 \cdot \log_2 0) = 0$. Суммарная энтропия получилась: $\frac{1}{2} \cdot 0 + \frac{1}{2} \cdot 0 = 0, \frac{1}{2}$ --- доля каждой выборки в исходной. 
+
+Так как 0 --- минимально возможное значение энтропии, критерий <<длина < 38 попугаев>> дает оптимальный результат.
 \end{block}
 
 %----------------------------------------------------------------------------------------
@@ -225,18 +256,6 @@
 %	RESULTS
 %----------------------------------------------------------------------------------------
 
-\textbf{Энтропийное кодирование}
-
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{placeholder.jpg}
-%\caption{Figure caption}
-%\end{figure}
-
-Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
-
-\textbf{Построение решающих деревьев}
-
-...
 
 
 %----------------------------------------------------------------------------------------
@@ -255,26 +274,43 @@ Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor
 %	CONCLUSION
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Conclusion}
+\textbf{Применение в алгоритме UMAP}
 
-Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non porttitor. Sed a massa dolor, id ornare enim. Fusce quis massa dictum tortor \textbf{tincidunt mattis}. Donec quam est, lobortis quis pretium at, laoreet scelerisque lacus. Nam quis odio enim, in molestie libero. Vivamus cursus mi at \textit{nulla elementum sollicitudin}.
+В анализе данных алгоритмы снижения размерности используют кросс-энтропию как показатель эффективности перенесения свойств объектов. Чем меньше кросс-энтропия, тем ближе к истинному оказалось подобранное отображение.
 
-\end{block}
+Приведем пример работы алгоритма UMAP. Мы возьмем набор данных об одежде, который включает в себя 70000 черно-белых изображений различной одежды по 10 классам: футболки, брюки, свитеры, платья, кроссовки и т.д. Каждая картинка имеет размер 28x28 пикселей или 784 пикселя.
+
+Результатом преобразования будет следующее отображение:
+
+\begin{figure}[!h]
+	\noindent\centering{
+		\includegraphics[height=9cm]{umap.png}
+	}
+	\caption{Алгоритм UMAP}
+	\label{figCurves}
+\end{figure} 
+
+Для оптимального подбора признаков в UMAP используется дивергенция Кульбака-Лейблера для случайной величины Бернулли $X \sim B(p(x))$:
+\[D_{KL}(P\, ||\, \tilde P)= - p(x)\log \tilde p(x) - (1 - p(x))\log (1 - \tilde p(x)) + p(x)\log p(x) + (1 - p(x))\log (1 - p(x)) = \]
+\[= p(x)\log \frac{p(x)}{\tilde p(x)} + (1 - p(x))\log \frac{1 - p(x)}{1 - \tilde p(x)}\]
+
+Однако алгоритм рассчитывает не просто разницу между двумя распределениями для одной случайной величины, а сумму таких разниц для $n$ случайных величин:
+\[S(P||\tilde P) = \sum_{i=1}^n p(x_i)\log \frac{p(x_i)}{\tilde p(x_i)} + (1 - p(x_i))\log \frac{1 - p(x_i)}{1 - \tilde p(x_i)}\]
+
+Данная величина показывает степень отдаленности друг от друга множеств из случайных величин: $P$ и $\tilde P$. Минимизация $S(P||\tilde P)$ по $\tilde p(x)$ позволяет найти множество $\tilde P$, которое наиболее похоже на множество $P$.
+
+Задача минимизации заключается в поиске оптимального $\tilde p(x)$. Если вернуться к исходной записи $D_{KL} = CE(P||\tilde P) - H(p)$, то видно, что энтропия не зависит от $\tilde p(x)$, соответственно, является константой при минимизации. Тогда задача преобразуется в оптимизацию лишь суммы кросс-энтропий:
+\[- \sum_{i=1}^n \left(p(x_i)\log \tilde p(x_i) + (1 - p(x_i))\log (1 - \tilde p(x_i))\right) \rightarrow \min_{\tilde p}\]
+
+Поэтому UMAP считается методом, основанным на кросс-энтропии.
+
+При отображении пространстве UMAP строит взвешенный граф из объектов. Веса ребер можно воспринимать как вероятность существования данного ребра. Поэтому ребро $e$ является случайной величиной, имеющей распределение Бернулли: $e \sim B(w(e))$, где $w(e)$ --- вес ребра $e$. Получается, что множество ребер построенного графа --- множество $E$ из случайных величин Бернулли.
+
+Тогда для более корректного переноса данных мы можем подобрать для множества~$E_h$ похожее на него множество~$E_l$ с функцией~$w_l(e)$, соответствующие низкоразмерному пространству.
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
-
-\begin{block}{Additional Information}
-
-Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
-\begin{itemize}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\end{itemize}
-
-\end{block}
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
@@ -282,11 +318,6 @@ Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius 
 
 \setbeamercolor{block title}{fg=black,bg=white} % Change the block title color
 
-\begin{block}{Acknowledgements}
-
-\small{\rmfamily{Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}} \\
-
-\end{block}
 
 %----------------------------------------------------------------------------------------
 %	CONTACT INFORMATION
