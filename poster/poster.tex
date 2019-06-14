@@ -22,10 +22,9 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
 \documentclass[final]{beamer}
 
-\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+\usepackage[scale=1]{beamerposter} % Use the beamerposter package for laying out the poster
 
 \usetheme{confposter} % Use the confposter theme supplied with this template
 
@@ -42,9 +41,19 @@
 % onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
 % Set twocolwid to be (2*onecolwid)+sepwid = 0.464
 % Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}	
 \usepackage[english,russian]{babel}
-\usepackage[utf8]{inputenc}
 \usepackage{mwe}
+\usepackage{amsmath} 
+\usepackage{mathtext} 
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
 \newlength{\sepwid}
 \newlength{\onecolwid}
 \newlength{\twocolwid}
@@ -74,7 +83,7 @@
 
 
 %----------------------------------------------------------------------------------------
-
+\usepackage{exscale}
 \begin{document}
 
 \addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
@@ -98,7 +107,7 @@
 \setbeamercolor{block alerted title}{fg=white,bg=jblue} % Change the alert block title colors
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
-\begin{alertblock}{Откуда появилась?}
+\begin{alertblock}{Что-что?}
     \begin{itemize}
     \item 1948 год - Клод Шеннон создал первую, истинно математическую, теорию энтропии
     \item Его идеи послужили основой разработки двух основных направлений: \textit{теории информации} и \textit{теории кодирования}
@@ -112,29 +121,44 @@
 \begin{block}{Для дискретных случайных величин}
 
 \begin{itemize}
-    \item Энтропия -- \textit{наименьшее среднее число бит, необходимое для кодирования некоторой информации}.\\[-1.6cm]
-    \[H=-\sum\limits_{i=1}^n p_i\log p_i, \]\\[-0.5cm]
+	\item \textbf{Энтропия} -- наименьшее среднее число бит, необходимое для кодирования некоторой информации.
+    \[H=-\sum\limits_{i=1}^n p_i\log p_i, \]
     где $p_i$ --- вероятность $i$-го исхода    
-    \item \textbf{Условная энтропия} --- количество бит, необходимое для того, чтобы узнать значение случайной величины $Y$ при условии, что случайная величина $X$ известна.\\[-1.6cm]
+    \item \textbf{Условная энтропия} --- количество бит, необходимое для того, чтобы узнать значение случайной величины $Y$ при условии, что случайная величина $X$ известна.
     \[H(Y|X)=-\sum\limits_{x, y} p(x, y)\log \cfrac{p(x, y)}{p(x)} \]
-    \item \textbf{Совместная энтропия} --- степень неопределенности, связанная со множеством случайных величин.\\[-1.4cm]
+    \item \textbf{Совместная энтропия} --- степень неопределенности, связанная со множеством случайных величин.
     \[H(X, Y)=-\sum\limits_{x}\sum\limits_{y} p(x, y)\log p(x ,y) \]
-    \item \textbf{Взаимная информация} $I(X; Y)$ --- мера взаимной зависимости двух случайных величин.\\[-1.5cm]
+    \item \textbf{Взаимная информация} $I(X; Y)$ --- мера взаимной зависимости двух случайных величин.
     \[I(X; Y) = \sum\limits_{x}\sum\limits_{y} p(x, y)\log \cfrac{p(x, y)}{p(x)p(y)} \]
 \end{itemize}
-
-\begin{alertblock}{Свойства}
-	\begin{itemize}
-		\item $H \geqslant 0$
-		\item $H(Y|X)=H(X, Y)-H(X)$ 
-		\item $H(Y|X)\leqslant H(Y)$
-		\item $H(X, Y)=H(X|Y)+H(Y|X)+I(X; Y)=H(X)+H(Y)-I(X; Y)$, где $I(X; Y)$ -- взаимная информация о случайных величинах $X$ и $Y$
-		\item $I(X; Y)\leqslant H(X)$, \ $I(X; Y)=H(X)-H(X|Y)$
-	\end{itemize}
-\end{alertblock}
-
-\textbf{Пример.} Текст задачи
 \end{block}
+
+\setbeamercolor{block alerted title}{fg=white,bg=jblue} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+
+\begin{alertblock}{Люблю решать задачки!}
+ Красная Шапочка встретила соседа-лесоруба Николая Петровича по дороге к бабушке Елене, которая равновероятно может жить в одной из трех деревень. Шапка точно помнит, в какой именно. Поскольку девочка маленькая, а неподалеку обитает волк, лесоруб решил узнать, в какой деревне живет бабушка, только не спросив напрямую, а задавая наводящие вопросы. 
+
+	Найдите энтропию местонахождения Елены. 
+\end{alertblock}	
+\begin{alertblock}{}	
+	Оказалось, на дороге в одну из трёх деревень, в каждой из которых равновероятно может находиться бравый охотник Борис, защищающий бабулю Елену от диких зверей, ошивается злой волк Матвей, а в одну деревню ведет только одна дорога. Вероятности того, что Матвей находится в деревне $i$-той ($X$ --- местонахождение волка по вертикали), и того, что Борис в деревне $j$-той ($Y$ --- местонахождение охотника по горизонтали):
+	\begin{center}
+		\begin{tabular}{c||c|c|c}
+			Деревня & 2112 & 2110 & К10 \\
+			\hline
+			\hline
+			2112 & 1/4 & 1/24 & 1/24 \\
+			\hline
+			2110 & 1/24 & 1/4 & 1/24 \\
+			\hline
+			К10 & 1/24 & 1/24 & 1/4 \\
+		\end{tabular}
+	\end{center}
+	
+	Найдите взаимную информацию местонахождения Матвея и Бориса: $I(X; Y)$  
+    
+\end{alertblock}
 
 %------------------------------------------------
 
@@ -221,16 +245,16 @@
 
 Например, у нас есть выборка объектов с одним признаком, длина: обыкновенный удав (22 попугая), анаконда (46 попугаев), анаконда (40 попугаев), обыкновенный удав (31 попугай).
 
-Попробуем разделить выборку по 38 попугаям:
+Попробуем разделить выборку по 38 попугаям (ОУ --- обыкновенный удав, А --- анаконда):
 \begin{center}
 	\tikzstyle{level 1}=[level distance=3cm, sibling distance=7cm]
 	\tikzstyle{level 2}=[level distance=3cm, sibling distance=1cm]
 	\tikz
 	\node {Длина < 38 попугаев}
 	child { node {Да}
-		child { node {Обыкновенный удав, обыкновенный удав}}}
+		child { node {ОУ, ОУ}}}
 	child { node {Нет}
-		child { node {Анаконда, анаконда}}};
+		child { node {А, А}}};
 \end{center}
 
 При расчете энтропии $0 \cdot \log_2 0$ считается равным 0, несмотря на $\log_2 0$. За вероятность принимается вероятность встретить данный класс в новой выборке.
@@ -337,14 +361,15 @@ UMAP строит ориентированный взвешенный граф: 
 \setbeamercolor{block alerted title}{fg=black,bg=dalblue} % Change the alert block title colors
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
-\begin{alertblock}{Contact Information}
+\begin{block}{Для тех, кто хочет больше!}
 
-\begin{itemize}
-\item Web: http://www.YourWebsite.com/lab
-\item Email: youremail@emailprovider.com
-\end{itemize}
+Воспользуйтесь qr-кодом и посмотрите полный текст повести про энтропию :)
 
-\end{alertblock}
+\begin{center}
+	\includegraphics[scale=0.3]{qrcode.png}
+\end{center}
+
+\end{block}
 
 %\begin{center}
 %\includegraphics[width=0.8\linewidth]{dal_fullmark_blak.jpg}
