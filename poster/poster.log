@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.4)  14 JUN 2019 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.4)  14 JUN 2019 15:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1478,70 +1478,70 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `T2A/lmr/m/sc' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 402.
+(Font)              using `T2A/lmr/m/n' instead on input line 417.
 
-LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 402.
+LaTeX Font Info:    Calculating math sizes for size <29.86> on input line 417.
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <29.86> not available
-(Font)              size <24.88> substituted on input line 402.
+(Font)              size <24.88> substituted on input line 417.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <14.93> not available
-(Font)              size <14.4> substituted on input line 402.
+(Font)              size <14.4> substituted on input line 417.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <29.86> not available
-(Font)              size <24.88> substituted on input line 402.
+(Font)              size <24.88> substituted on input line 417.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <14.93> not available
-(Font)              size <14.4> substituted on input line 402.
+(Font)              size <14.4> substituted on input line 417.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/bx/sc' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 402.
+(Font)              using `T2A/lmr/m/n' instead on input line 417.
 
 
 LaTeX Font Warning: Font shape `T2A/lmr/bx/n' undefined
-(Font)              using `T2A/lmr/m/n' instead on input line 402.
+(Font)              using `T2A/lmr/m/n' instead on input line 417.
 
 
 LaTeX Font Warning: Font shape `T2A/lmss/bx/n' undefined
-(Font)              using `T2A/lmss/m/n' instead on input line 402.
+(Font)              using `T2A/lmss/m/n' instead on input line 417.
 
 <umap.png, id=13, 840.13875pt x 596.2275pt>
 File: umap.png Graphic file (type png)
 <use umap.png>
-Package pdftex.def Info: umap.png  used on input line 402.
+Package pdftex.def Info: umap.png  used on input line 417.
 (pdftex.def)             Requested size: 360.82957pt x 256.0748pt.
 
-Underfull \hbox (badness 3439) in paragraph at lines 402--402
+Underfull \hbox (badness 3439) in paragraph at lines 417--417
 []\T2A/lmss/bx/n/29.86 Чтобы пе-ре-не-сти граф в низ-ко-раз-мер-ное про-стран-ство,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--402
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 []\T2A/lmss/bx/n/29.86 Для это-го UMAP ми-ни-ми-зи-ру-ет сум-му ди-вер-ген-ций
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 402--402
+Underfull \hbox (badness 2119) in paragraph at lines 417--417
 \T2A/lmss/bx/n/29.86 Кульбака-Лейблера для каж-дой слу-чай-ной ве-ли-чи-ны из
  []
 
 <qrcode.png, id=15, 1003.75pt x 1003.75pt>
 File: qrcode.png Graphic file (type png)
 <use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 402.
+Package pdftex.def Info: qrcode.png  used on input line 417.
 (pdftex.def)             Requested size: 301.12732pt x 301.12732pt.
 
-Overfull \hbox (4.99402pt too wide) detected at line 402
+Overfull \hbox (4.99402pt too wide) detected at line 417
 [][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
 LaTeX Font Warning: Font shape `T2A/lmss/m/sc' in size <74.3> not available
-(Font)              size <51.59> substituted on input line 402.
+(Font)              size <51.59> substituted on input line 417.
 
 
 Overfull \hbox (88.20334pt too wide) has occurred while \output is active
@@ -1560,15 +1560,15 @@ Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `poster.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 404.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 404.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
  (/Users/yana/Documents/GitHub/entropy/poster/poster.aux
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 20.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 404.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 404.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 419.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 419.
 Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1583,13 +1583,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  24422 strings out of 492649
  467728 string characters out of 6129623
- 803211 words of memory out of 5000000
+ 814151 words of memory out of 5000000
  27682 multiletter control sequences out of 15000+600000
  40937 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,19n,71p,817b,2044s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,21n,71p,817b,2044s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm2986.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm3583.pfb>
-Output written on /Users/yana/Documents/GitHub/entropy/poster/poster.pdf (1 page, 319238 bytes).
+Output written on /Users/yana/Documents/GitHub/entropy/poster/poster.pdf (1 page, 320629 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
