@@ -44,14 +44,16 @@
     \usepackage{mathtext} 
     \usepackage{multicol}
     \usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{E32636} % цвет ссылок
+\definecolor{urlcolor}{HTML}{4285B4} % цвет гиперссылок
     \newcommand{\norm}{\mathcal{N}}
     \cfoot{\thepage} 
-    \hypersetup{
-      colorlinks=true
-       linkcolor=red,       
+    \hypersetup{pdfstartview=FitH,
+      colorlinks=true,
+       linkcolor=linkcolor,       
             citecolor=black,   
             filecolor=magenta,  
-            urlcolor=blue}
+            urlcolor=urlcolor}
     \makeatletter 
     \renewcommand{\headrulewidth}{0,4mm} 
     %ЦВЕТА
@@ -83,20 +85,21 @@
 \begin{document}
 \maketitle
 
-\input{theory.tex}
+\input{chapters/theory.tex}
 
 \section*{Чуть-чуть истории... }~\
 \\
 
-\input{history.tex}
+\input{chapters/history.tex}
 
 \section*{Применение энтропии и ее родственников}~\
 
-\input{umap_applications.tex}
+\input{chapters/applications.tex}
+\newpage
 
 \section*{Ключи к сердцу Красной Шапочки}~\
 \\
 
-\input{answers.tex}
+\input{chapters/answers.tex}
 
 \end{document}
