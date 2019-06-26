@@ -10,3 +10,6 @@ umap_applications.synctex.gz
 *.log
 *.out
 *.gz
+*.nav
+*.snm
+*.toc
